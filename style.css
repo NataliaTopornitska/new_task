@@ -1,0 +1,85 @@
+body {
+  height: 100vh;
+  background: #7dcad8;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 120px;
+}
+
+.container {
+  background: rgb(247, 245, 245);
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 700px;
+  text-align: center;
+}
+
+#output {
+  margin-top: 50px;
+  min-height: 90px;
+  border: 2px solid #dfd9d9;
+  border-radius: 8px;
+  padding: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  user-select: none;
+  cursor: default;
+  background-color: #e7ebec;
+}
+
+.text-input {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.2s;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.text-input:focus {
+  border-color: #88afdf;
+  outline: none;
+}
+
+.show-btn {
+  background: #75d8e6;
+  color: black;
+  border: none;
+  padding: 10px 18px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.show-btn:hover {
+  background: #7dcad8;
+}
+
+.letter {
+  display: inline-block;
+  font-size: 26px;
+  padding: 6px 4px;
+  margin: 2px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.letter.selected {
+  background: #14970f;
+  color: white;
+}
+
+.dragging {
+  opacity: 0.5;
+}
+
+.insert-marker {
+  width: 2px;
+  background: rgb(58, 18, 202);
+  margin: 0 1px;
+}
